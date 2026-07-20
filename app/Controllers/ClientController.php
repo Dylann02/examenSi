@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\TransactionModel;
 use App\Models\NumeroModel;
 use App\Models\ClientModel;
 
@@ -99,8 +99,7 @@ class ClientController extends BaseController
         $compte = $numeroModel->find($sessionData['id']);
 
         $transactionModel = model('App\Models\TransactionModel');
-        
-        // Appelle la méthode qui fait les jointures SQL pour l'historique
+    
         $historique = $transactionModel->getHistoriqueCompletClient($compte['id']);
 
         return view('client/dashboard', [
@@ -109,9 +108,7 @@ class ClientController extends BaseController
         ]);
     }
 
-    /**
-     * AJOUT ICI : Gestion des actions Soumises depuis le Dashboard (Dépôt / Retrait / Transfert)
-     */
+    // AJOUT ICI : Gestion des actions Soumises depuis le Dashboard (Dépôt / Retrait / Transfert)
     public function executerAction()
     {
         if (!$this->session->has('client_numero')) {
@@ -126,7 +123,7 @@ class ClientController extends BaseController
             return redirect()->back()->with('error', 'Le montant doit être supérieur à 0 Ar.');
         }
 
-        $transactionModel = model('App\Models\TransactionModel');
+        $transactionModel = new TransactionModel();
 
         switch ($action) {
             case 'depot':

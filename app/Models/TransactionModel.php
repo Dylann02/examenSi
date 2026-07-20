@@ -111,9 +111,6 @@ class TransactionModel extends Model
         return $db->transStatus();
     }
 
-    /**
-     * Tâche ACTION : TRANSFERT
-     */
     public function executerTransfert(int $idSource, string $numDest, float $montant)
     {
         $numeroModel = model('App\Models\NumeroModel');
@@ -189,9 +186,6 @@ class TransactionModel extends Model
         return $db->transStatus() ? 'success' : 'error';
     }
 
-    /**
-     * CORRECTION DES GAINS : Utilisation d'un LEFT JOIN ou COALESCE pour choper toutes les transactions
-     */
     public function getGainsOperateur(?int $idOperateur = null)
     {
         $builder = $this->db->table($this->table . ' t')
@@ -199,7 +193,6 @@ class TransactionModel extends Model
             ->where('t.statut', 'SUCCES');
 
         if ($idOperateur) {
-            // Un LEFT JOIN pour s'assurer de ne perdre aucune ligne si id_numero_source est null sur certaines actions
             $builder->join('numero n', 'n.id = t.id_numero_source OR n.id = t.id_numero_destination', 'left')
                     ->where('n.id_operateur', $idOperateur);
         }

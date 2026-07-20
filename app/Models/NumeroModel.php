@@ -14,7 +14,6 @@ class NumeroModel extends Model
 
     
     //Tâche LOGIN 
-   
     public function loginAutomatique(string $num)
     {
         $compte = $this->where('numero', $num)->first();
@@ -79,7 +78,7 @@ class NumeroModel extends Model
         ->select('n.id as id_numero, n.numero, n.solde, n.etat, c.nom, c.prenom, c.cin, op.nom as operateur')
         ->join('client c', 'c.id = n.id_client', 'left')
         ->join('operateur op', 'op.id = n.id_operateur', 'left')
-        ->where('n.id_operateur', $idTelma) // <-- Filtre strict sur l'ID
+        ->where('n.id_operateur', $idTelma)
         ->orderBy('c.nom', 'ASC')
         ->get()
         ->getResultArray();

@@ -10,10 +10,6 @@ class BaremeModel extends Model
     protected $primaryKey       = 'id';
     protected $allowedFields    = ['id_operation', 'id_operateur', 'montant_min', 'montant_max', 'frais'];
 
-    /**
-     * Récupère les barèmes avec les noms d'opérateur et de type d'opération,
-     * en appliquant les filtres optionnels.
-     */
     public function getBaremesWithDetails(?int $idOperateur = null, ?int $idOperation = null): array
     {
         $builder = $this->select('bareme.*, type_operation.nom as operation_nom, operateur.nom as operateur_nom')
