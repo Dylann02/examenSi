@@ -13,7 +13,7 @@ class OperateurController extends BaseController
     public function __construct()
     {
         $this->transactionModel = new TransactionModel();
-        $this->numeroModel      = new NumeroModel();
+        $this->numeroModel = new NumeroModel();
     }
 
     /**
@@ -28,7 +28,8 @@ class OperateurController extends BaseController
     // Situation des gains de l'opérateur via les frais
     public function gains()
     {
-        $data['gains'] = $this->transactionModel->getGainsOperateur();
+        $idTelma = 1;
+        $data['transactions'] = $this->transactionModel->getDetailGainsOperateur($idTelma);
         return view('operateur/gains', $data);
     }
 
@@ -43,7 +44,7 @@ class OperateurController extends BaseController
     public function historiqueClient($idNumero)
     {
         $data['historique'] = $this->transactionModel->getHistoriqueCompletClient($idNumero);
-        $data['id_numero']  = $idNumero;
+        $data['id_numero'] = $idNumero;
         return view('operateur/historique_client', $data);
     }
 
@@ -60,7 +61,7 @@ class OperateurController extends BaseController
 
             session()->set([
                 'isLoggedIn' => true,
-                'role'       => 'operateur'
+                'role' => 'operateur'
             ]);
 
             // Redirection vers l'accueil du groupe 'operateur' (qui appelle la méthode index())
@@ -84,5 +85,12 @@ class OperateurController extends BaseController
     public function dashboard()
     {
         return view('operateur/dashboard');
+    }
+    public function clients()
+    {
+        $numeroModel = model('App\Models\NumeroModel');
+        $data['clients'] = $numeroModel->getClientsTelma();
+
+        return view('operateur/clients', $data);
     }
 }

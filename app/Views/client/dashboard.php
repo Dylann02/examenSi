@@ -96,7 +96,8 @@
                 <?php foreach ($historique as $tx): ?>
                     <tr>
                         <td><?= $tx['date_transaction'] ?></td>
-                        <td><strong><?= esc($tx['type_nom']) ?></strong></td>
+                        <!-- Remplacement de $tx['type_nom'] par $tx['type_operation'] -->
+                        <td><strong><?= esc($tx['type_operation']) ?></strong></td>
                         <td><?= number_format($tx['montant'], 2, ',', ' ') ?> Ar</td>
                         <td style="color: #c00000;"><?= number_format($tx['frais'], 2, ',', ' ') ?> Ar</td>
                         <td style="font-weight: bold; color: <?= $tx['statut'] === 'SUCCES' ? 'green' : 'orange' ?>;">

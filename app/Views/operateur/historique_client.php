@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Historique des transactions du compte #<?= esc($id_numero) ?></h1>
+    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
     <a href="<?= base_url('operateur/clients') ?>">← Retour au suivi des clients</a>
     <br><br>
 

@@ -8,5 +8,6 @@ class OperateurModel extends Model
     protected $allowedFields = [
         'nom', 
     ];
+
 }
 ?>
