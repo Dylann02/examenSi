@@ -1,0 +1,510 @@
+CRITICAL - 2026-04-16 10:42:21 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('$1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:55 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:55 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:55 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:55 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:55 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:43:58 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:06 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:18 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:19 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:19 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:19 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:19 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:19 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:20 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produits/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:44:33 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:45:08 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:45:08 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:45:29 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:45:29 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:45:30 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduiById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:12 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:47:13 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
+CRITICAL - 2026-04-16 10:49:38 --> ErrorException: Undefined variable $produit
+[Method: GET, Route: produit/1]
+in APPPATH/Views/produits.php on line 1.
+ 1 APPPATH/Views/produits.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produit', '/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/app/Views/produits.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('produits', [], true)
+ 5 APPPATH/Controllers/ProduitController.php(18): view('produits', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\ProduitController->getProduitById('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProduitController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/codeigniter4-framework-b3359be/public/index.php')
