@@ -199,23 +199,20 @@ class TransactionModel extends Model
  * Récupère le total des transactions et des frais pour chaque opérateur.
  * Permet également de filtrer sur un opérateur spécifique.
  */
-public function getGainsParOperateur(?int $idOperateurFilter = null)
+public function getGainsOperateur(int $idOperateur)
 {
-    $builder = $this->db->table('operateur o')
-        ->select('o.id as id_operateur, o.nom as nom_operateur, 
-                  COUNT(t.id) as total_transactions, 
-                  COALESCE(SUM(t.frais), 0) as total_gains')
-        // Jointure avec les numéros et les transactions
-        ->join('numero n', 'n.id_operateur = o.id', 'left')
-        ->join('transaction_mm t', 't.id_numero_source = n.id AND t.statut = "SUCCES"', 'left')
-        ->groupBy('o.id, o.nom');
+    $builder = $this->db->table($this->table . ' t')
+        ->select('COALESCE(SUM(t.frais), 0) as total_gains, COUNT(t.id) as total_transactions')
+        ->join('numero n', 'n.id = t.id_numero_source')
+        ->where('n.id_operateur', $idOperateur)
+        ->where('t.statut', 'SUCCES');
 
-    // Application du filtre si un opérateur est sélectionné
-    if (!empty($idOperateurFilter)) {
-        $builder->where('o.id', $idOperateurFilter);
-    }
+    $result = $builder->get()->getRowArray();
 
-    return $builder->get()->getResultArray();
+    return [
+        'total_transactions' => (int) ($result['total_transactions'] ?? 0),
+        'total_gains'        => (float) ($result['total_gains'] ?? 0.00),
+    ];
 }
 
     public function getHistoriqueCompletClient(int $idNumero)
@@ -233,4 +230,21 @@ public function getGainsParOperateur(?int $idOperateurFilter = null)
             ->get()
             ->getResultArray();
     }
+
+   public function getDetailGainsOperateur(int $idOperateur)
+{
+    return $this->db->table('transaction_mm t')
+        ->select('t.*, 
+                  n.numero as numero_source, 
+                  c.nom as nom_client, 
+                  op.nom as nom_operation') 
+        ->join('numero n', 'n.id = t.id_numero_source')
+        ->join('client c', 'c.id = n.id_client', 'left')
+        ->join('type_operation op', 'op.id = t.id_operation', 'left')
+        ->where('n.id_operateur', $idOperateur)
+        ->where('t.statut', 'SUCCES')
+        ->orderBy('t.id', 'DESC')
+        ->get()
+        ->getResultArray();
+}
 }
