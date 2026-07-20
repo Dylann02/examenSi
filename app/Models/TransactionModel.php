@@ -26,7 +26,6 @@ class TransactionModel extends Model
     {
         $db = \Config\Database::connect();
         
-        // CORRECTION / SÉCURITÉ : On s'assure que la recherche insensible à la casse fonctionne (UPPER)
         $row = $db->table('bareme')
                 ->join('type_operation', 'type_operation.id = bareme.id_operation')
                 ->where('UPPER(type_operation.nom)', strtoupper($typeOperation))
@@ -57,7 +56,7 @@ class TransactionModel extends Model
 
         $this->save([
             'montant'               => $montant,
-            'frais'                 => 0.00, // Pas de frais sur le dépôt d'après tes barèmes
+            'frais'                 => 0.00,
             'statut'                => 'SUCCES',
             'id_operation'          => $op['id'],
             'id_numero_destination' => $idNumero,
@@ -112,16 +111,20 @@ class TransactionModel extends Model
     }
 
     /**
-     * Tâche ACTION : TRANSFERT
+     * Tâche ACTION : TRANSFERT avec restrictions inter-opérateurs et % spécifiques
+     */
+/**
+     * Tâche ACTION : TRANSFERT avec restrictions inter-opérateurs et sécurité barème
      */
     public function executerTransfert(int $idSource, string $numDest, float $montant)
     {
         $numeroModel = model('App\Models\NumeroModel');
         $dest = $numeroModel->where('numero', $numDest)->first();
 
+        $db = \Config\Database::connect();
+
         if (!$dest) {
             $prefixeSaisi = substr($numDest, 0, 3);
-            $db = \Config\Database::connect();
             $prefixeData = $db->table('prefixe')->where('prefixe', $prefixeSaisi)->get()->getRowArray();
 
             if (!$prefixeData) {
@@ -156,14 +159,50 @@ class TransactionModel extends Model
 
         $source = $numeroModel->find($idSource);
         
-        $frais = $this->getFrais('TRANSFERT', (int)$source['id_operateur'], $montant);
+        // --- VÉRIFICATION DU BARÈME (Nouveau) ---
+        // On vérifie d'abord si le montant existe bien dans le barème de l'opérateur source
+        $checkBareme = $db->table('bareme')
+            ->join('type_operation', 'type_operation.id = bareme.id_operation')
+            ->where('UPPER(type_operation.nom)', 'TRANSFERT')
+            ->where('bareme.id_operateur', (int)$source['id_operateur'])
+            ->where('bareme.montant_min <=', $montant)
+            ->where('bareme.montant_max >=', $montant)
+            ->get()
+            ->getRowArray();
+
+        if (!$checkBareme) {
+            return 'montant_hors_bareme'; // Le montant est trop grand ou trop petit pour le barème
+        }
+
+        $frais = (float)$checkBareme['frais'];
         $totalADeduire = $montant + $frais;
+        // ----------------------------------------
+
+        $montantFinalDestinataire = $montant;
+
+        // GESTION DES RESTRICTIONS ET POURCENTAGES INTER-OPÉRATEURS
+        if ((int)$source['id_operateur'] !== (int)$dest['id_operateur']) {
+            
+            $configCommission = $db->table('commission_interoperateur')
+                ->where('id_operateur_source', (int)$source['id_operateur'])
+                ->where('id_operateur_dest', (int)$dest['id_operateur'])
+                ->get()
+                ->getRowArray();
+
+            if (!$configCommission) {
+                return 'transfert_non_autorise';
+            }
+
+            $tauxCommission = (float)$configCommission['pourcentage'];
+            $commissionInter = $montant * ($tauxCommission / 100);
+            
+            $montantFinalDestinataire = $montant + $commissionInter;
+        }
 
         if ($source['solde'] < $totalADeduire) {
             return 'solde_insuffisant';
         }
 
-        $db = \Config\Database::connect();
         $db->transStart();
 
         $op = $db->table('type_operation')->where('UPPER(nom)', 'TRANSFERT')->get()->getRowArray();
@@ -173,7 +212,7 @@ class TransactionModel extends Model
         }
 
         $db->table('numero')->where('id', $idSource)->decrement('solde', $totalADeduire);
-        $db->table('numero')->where('id', $dest['id'])->increment('solde', $montant);
+        $db->table('numero')->where('id', $dest['id'])->increment('solde', $montantFinalDestinataire);
 
         $this->save([
             'montant'               => $montant,
@@ -189,9 +228,6 @@ class TransactionModel extends Model
         return $db->transStatus() ? 'success' : 'error';
     }
 
-    /**
-     * CORRECTION DES GAINS : Utilisation d'un LEFT JOIN ou COALESCE pour choper toutes les transactions
-     */
     public function getGainsOperateur(?int $idOperateur = null)
     {
         $builder = $this->db->table($this->table . ' t')
@@ -199,7 +235,6 @@ class TransactionModel extends Model
             ->where('t.statut', 'SUCCES');
 
         if ($idOperateur) {
-            // Un LEFT JOIN pour s'assurer de ne perdre aucune ligne si id_numero_source est null sur certaines actions
             $builder->join('numero n', 'n.id = t.id_numero_source OR n.id = t.id_numero_destination', 'left')
                     ->where('n.id_operateur', $idOperateur);
         }
@@ -223,20 +258,20 @@ class TransactionModel extends Model
             ->getResultArray();
     }
 
-   public function getDetailGainsOperateur(int $idOperateur)
-{
-    return $this->db->table('transaction_mm t')
-        ->select('t.*, 
-                  n.numero as numero_source, 
-                  c.nom as nom_client, 
-                  op.nom as nom_operation') 
-        ->join('numero n', 'n.id = t.id_numero_source')
-        ->join('client c', 'c.id = n.id_client', 'left')
-        ->join('type_operation op', 'op.id = t.id_operation', 'left')
-        ->where('n.id_operateur', $idOperateur)
-        ->where('t.statut', 'SUCCES')
-        ->orderBy('t.id', 'DESC')
-        ->get()
-        ->getResultArray();
-}
+    public function getDetailGainsOperateur(int $idOperateur)
+    {
+        return $this->db->table('transaction_mm t')
+            ->select('t.*, 
+                      n.numero as numero_source, 
+                      c.nom as nom_client, 
+                      op.nom as nom_operation') 
+            ->join('numero n', 'n.id = t.id_numero_source')
+            ->join('client c', 'c.id = n.id_client', 'left')
+            ->join('type_operation op', 'op.id = t.id_operation', 'left')
+            ->where('n.id_operateur', $idOperateur)
+            ->where('t.statut', 'SUCCES')
+            ->orderBy('t.id', 'DESC')
+            ->get()
+            ->getResultArray();
+    }
 }

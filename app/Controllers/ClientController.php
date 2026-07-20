@@ -26,12 +26,10 @@ class ClientController extends BaseController
             return redirect()->back()->with('error', 'Veuillez saisir un numéro.');
         }
 
-        // Vérifier le préfixe
         $prefixeSaisi = substr($num, 0, 3);
         $db = \Config\Database::connect();
         $prefixeData = $db->table('prefixe')->where('prefixe', $prefixeSaisi)->get()->getRowArray();
 
-        // RESTRICTION : Seul Telma (id = 1) a le droit d'utiliser l'application
         if (!$prefixeData || (int)$prefixeData['id_operateur'] !== 1) {
             return redirect()->to(base_url('client/login'))->with('error', 'Seuls les clients Telma peuvent utiliser cette application.');
         }
@@ -39,7 +37,6 @@ class ClientController extends BaseController
         $numeroModel = model('App\Models\NumeroModel');
         $compte = $numeroModel->where('numero', $num)->first();
 
-        // Si le compte existe déjà
         if ($compte) {
             if ($compte['etat'] === 'BLOQUE') {
                 return redirect()->back()->with('error', 'Ce numéro est bloqué.');
@@ -48,13 +45,11 @@ class ClientController extends BaseController
             return redirect()->to(base_url('client/dashboard'));
         }
 
-        // Si c'est un nouveau numéro Telma -> Affichage du formulaire d'inscription
         $nom = $this->request->getPost('nom');
         if (empty($nom)) {
             return redirect()->back()->withInput()->with('inscription_numero', $num);
         }
 
-        // Inscription du nouveau client Telma
         $prenom = $this->request->getPost('prenom');
         $cin = $this->request->getPost('cin');
 
@@ -70,7 +65,7 @@ class ClientController extends BaseController
             'solde'        => 0.00,
             'etat'         => 'ACTIF',
             'id_client'    => $idClient,
-            'id_operateur' => 1 // Forcé à Telma
+            'id_operateur' => 1
         ]);
         $db->transComplete();
 
@@ -99,8 +94,6 @@ class ClientController extends BaseController
         $compte = $numeroModel->find($sessionData['id']);
 
         $transactionModel = model('App\Models\TransactionModel');
-        
-        // Appelle la méthode qui fait les jointures SQL pour l'historique
         $historique = $transactionModel->getHistoriqueCompletClient($compte['id']);
 
         return view('client/dashboard', [
@@ -109,9 +102,6 @@ class ClientController extends BaseController
         ]);
     }
 
-    /**
-     * AJOUT ICI : Gestion des actions Soumises depuis le Dashboard (Dépôt / Retrait / Transfert)
-     */
     public function executerAction()
     {
         if (!$this->session->has('client_numero')) {
@@ -156,6 +146,9 @@ class ClientController extends BaseController
                     return redirect()->back()->with('error', 'Impossible de s\'envoyer de l\'argent à soi-même.');
                 } elseif ($res === 'solde_insuffisant') {
                     return redirect()->back()->with('error', 'Solde insuffisant pour couvrir le transfert et ses frais.');
+                } elseif ($res === 'transfert_non_autorise') {
+                    // Capter l'interdiction entre les opérateurs non autorisés
+                    return redirect()->back()->with('error', 'Les transferts directs entre ces deux opérateurs ne sont pas autorisés.');
                 }
                 break;
         }
