@@ -5,6 +5,18 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('/produits','ProduitController::getProduit');
-$routes->get('/produit/(:num)' ,'ProduitController::getProduitById/$1');
+// Routes pour l'authentification et l'espace Client
+
+
+$routes->group('client', function ($routes) {
+    $routes->get('login', 'ClientController::login');
+    $routes->post('login', 'ClientController::handleLogin');
+    $routes->get('logout', 'ClientController::logout');
+    $routes->get('dashboard', 'ClientController::dashboard');
+    $routes->post('action', 'ClientController::executerAction');
+});
+// Groupe Espace Admin pour la gestion des operateurs
+$routes->group('operateur', function ($routes) {
+    $routes->post('handleLogin', 'OperateurController::handleLogin');
+    $routes->get('dashboard', 'OperateurController::dashboard');
+});

@@ -30,12 +30,12 @@ Client:
             -nom operateur
             -mot de passe
     -Action:
-        -solde  -> voir solde 
-        -depot 
-        -retrait
-        -transfert
-        -historique -> voir historique
-            -liste Transaction du client connecter 
+        -solde  -> voir solde  (ok)
+        -depot  (ok )
+        -retrait (ok)
+        -transfert (ok)
+        -historique -> voir historique (ok)
+            -liste Transaction du client connecter  (ok)
 
 
 
