@@ -57,16 +57,32 @@ class OperateurController extends BaseController
 
         // Vérification brute avec tes identifiants (admin / admin)
         if ($username === 'admin' && $password === 'admin') {
-            
+
             session()->set([
-                'isLoggedIn' => true, 
+                'isLoggedIn' => true,
                 'role'       => 'operateur'
             ]);
-            
+
             // Redirection vers l'accueil du groupe 'operateur' (qui appelle la méthode index())
             return redirect()->to(base_url('operateur'));
         } else {
             return redirect()->back()->with('error', 'Identifiants incorrects');
         }
+
+        // 2. Vérification stricte des identifiants admin
+        if ($nom !== 'admin' || $mdp !== 'admin') {
+            return redirect()->back()->with('error', 'Identifiants administrateur incorrects.');
+        }
+
+        // 3. Stockage en session
+        $session = \Config\Services::session();
+        $session->set('operateur_nom', 'Administrateur');
+
+        // Message de succès personnalisé pour la gestion globale
+        return view('operateur/dashboard');
+    }
+    public function dashboard()
+    {
+        return view('operateur/dashboard');
     }
 }

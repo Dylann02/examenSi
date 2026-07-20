@@ -33,7 +33,7 @@ $routes->group('operateur', function ($routes) {
     $routes->get('baremes/delete/(:num)', 'BaremeController::delete/$1');
 });
 
-// Groupe Client
+
 $routes->group('client', function ($routes) {
     $routes->get('login', 'ClientController::login');
     $routes->post('login', 'ClientController::handleLogin');
