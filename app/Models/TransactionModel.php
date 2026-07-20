@@ -110,12 +110,6 @@ class TransactionModel extends Model
         return $db->transStatus();
     }
 
-    /**
-     * Tâche ACTION : TRANSFERT avec restrictions inter-opérateurs et % spécifiques
-     */
-/**
-     * Tâche ACTION : TRANSFERT avec restrictions inter-opérateurs et sécurité barème
-     */
     public function executerTransfert(int $idSource, string $numDest, float $montant)
     {
         $numeroModel = model('App\Models\NumeroModel');
