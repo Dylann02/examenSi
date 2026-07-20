@@ -1,0 +1,40 @@
+Sujet (1h20min)
+    -Analyse (20min)
+    -conception base(1h)
+
+
+Migration de la base (10min)  (ETU003952)
+    -Operateur
+    -Prefixe
+    -Client
+    -Numero
+    -Operation
+    -Bareme
+    -Transaction
+
+Donnee de test(Seeds) (10min) (ETU003952)
+
+Gestion Operateur
+    -Gestion prefixe :CRUD 
+    -Bareme  de l'operateur : CRUD 
+    -Gain:affichage du solde de l'operateur 
+    -Suivi client 
+    -Historique transaction de chaque client 
+    
+
+
+Client:
+    -LOGIN:
+        -> Via numero
+        -> Bouton Se connecter en tant qu'operateur avec mot de passe lors de l'authentification
+            -nom operateur
+            -mot de passe 
+    -Action:
+        -solde  -> voir solde 
+        -depot 
+        -retrait
+        -transfert
+        -historique -> voir historique
+            -liste Transaction du client connecter 
+
+     
