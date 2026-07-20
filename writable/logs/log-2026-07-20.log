@@ -2253,3 +2253,152 @@ DEBUG - 2026-07-20 13:46:31 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-07-20 13:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-20 13:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-20 13:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-07-20 11:31:32 --> REDIRECTED ROUTE at http://localhost:8080/client/login
+DEBUG - 2026-07-20 11:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 11:47:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:03 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:27 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-20 11:47:30 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\TransactionModel::getGainsParOperateur
+[Method: GET, Route: operateur/gains]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/OperateurController.php(39): CodeIgniter\Model->__call('getGainsParOperateur', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\OperateurController->gains()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')

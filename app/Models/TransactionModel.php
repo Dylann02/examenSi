@@ -191,19 +191,32 @@ class TransactionModel extends Model
         return $db->transStatus() ? 'success' : 'error';
     }
 
-    public function getGainsOperateur(?int $idOperateur = null)
-    {
-        $builder = $this->db->table($this->table . ' t')
-            ->select('SUM(t.frais) as total_gains, COUNT(t.id) as total_transactions')
-            ->where('t.statut', 'SUCCES');
+   /**
+ * Calcule le total des gains (somme des frais) et le nombre de transactions réussies.
+ * Si $idOperateur est passé en paramètre, filtre uniquement pour cet opérateur.
+ */
+/**
+ * Récupère le total des transactions et des frais pour chaque opérateur.
+ * Permet également de filtrer sur un opérateur spécifique.
+ */
+public function getGainsParOperateur(?int $idOperateurFilter = null)
+{
+    $builder = $this->db->table('operateur o')
+        ->select('o.id as id_operateur, o.nom as nom_operateur, 
+                  COUNT(t.id) as total_transactions, 
+                  COALESCE(SUM(t.frais), 0) as total_gains')
+        // Jointure avec les numéros et les transactions
+        ->join('numero n', 'n.id_operateur = o.id', 'left')
+        ->join('transaction_mm t', 't.id_numero_source = n.id AND t.statut = "SUCCES"', 'left')
+        ->groupBy('o.id, o.nom');
 
-        if ($idOperateur) {
-            $builder->join('numero n', 'n.id = t.id_numero_source')
-                    ->where('n.id_operateur', $idOperateur);
-        }
-
-        return $builder->get()->getRowArray();
+    // Application du filtre si un opérateur est sélectionné
+    if (!empty($idOperateurFilter)) {
+        $builder->where('o.id', $idOperateurFilter);
     }
+
+    return $builder->get()->getResultArray();
+}
 
     public function getHistoriqueCompletClient(int $idNumero)
     {
