@@ -2,15 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historique du Client</title>
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
 </head>
 <body>
     <h1>Historique des transactions du compte #<?= esc($id_numero) ?></h1>
-    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
-    <a href="<?= base_url('operateur/clients') ?>">← Retour au suivi des clients</a>
-    <br><br>
+    <p>
+        <a href="<?= site_url('operateur/') ?>">Retour au dashboard</a> | 
+        <a href="<?= base_url('operateur/clients') ?>">← Retour au suivi des clients</a>
+    </p>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
@@ -26,7 +29,7 @@
         <tbody>
             <?php if (empty($historique)): ?>
                 <tr>
-                    <td colspan="8">Aucune transaction trouvée pour ce client.</td>
+                    <td colspan="8" class="text-center">Aucune transaction trouvée pour ce client.</td>
                 </tr>
             <?php else: ?>
                 <?php foreach ($historique as $tx): ?>
@@ -37,7 +40,7 @@
                         <td><?= esc($tx['source'] ?? '-') ?></td>
                         <td><?= esc($tx['destination'] ?? '-') ?></td>
                         <td><?= number_format($tx['montant'], 2, ',', ' ') ?> Ar</td>
-                        <td><?= number_format($tx['frais'], 2, ',', ' ') ?> Ar</td>
+                        <td><strong><?= number_format($tx['frais'], 2, ',', ' ') ?> Ar</strong></td>
                         <td><?= esc($tx['statut']) ?></td>
                     </tr>
                 <?php endforeach; ?>

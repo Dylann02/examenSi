@@ -2,20 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Préfixes</title>
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
 </head>
 <body>
     <h1>Configuration des préfixes valables de l'opérateur</h1>
-    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
+    <p><a href="<?= site_url('operateur/') ?>">Retour au dashboard</a></p>
+
     <?php if (session()->getFlashdata('success')): ?>
-        <p style="color:green;"><?= session()->getFlashdata('success') ?></p>
+        <p class="alert-success"><?= session()->getFlashdata('success') ?></p>
     <?php endif; ?>
 
     <?php if (session()->getFlashdata('error')): ?>
-        <p style="color:red;"><?= session()->getFlashdata('error') ?></p>
+        <p class="alert-error"><?= session()->getFlashdata('error') ?></p>
     <?php endif; ?>
 
-    <!-- FORMULAIRE DE MODIFICATION (S'affiche si on a cliqué sur Modifier) -->
+    <!-- FORMULAIRE DE MODIFICATION -->
     <?php if (isset($prefixe_a_modifier)): ?>
         <h3>Modifier le préfixe #<?= $prefixe_a_modifier['id'] ?></h3>
         <form action="<?= base_url('operateur/prefixes/update/' . $prefixe_a_modifier['id']) ?>" method="post">
@@ -34,7 +37,7 @@
             </select>
 
             <button type="submit">Mettre à jour</button>
-            <a href="<?= base_url('operateur/prefixes') ?>">Annuler</a>
+            <a href="<?= base_url('operateur/prefixes') ?>" class="btn-cancel">Annuler</a>
         </form>
         <hr>
     <?php else: ?>
@@ -60,10 +63,9 @@
 
     <!-- LISTE DES PRÉFIXES -->
     <h3>Liste des préfixes enregistrés</h3>
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table>
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Préfixe</th>
                 <th>Opérateur</th>
                 <th>Actions</th>
@@ -72,8 +74,7 @@
         <tbody>
             <?php foreach ($prefixes as $p): ?>
                 <tr>
-                    <td><?= $p['id'] ?></td>
-                    <td><?= esc($p['prefixe']) ?></td>
+                    <td><strong><?= esc($p['prefixe']) ?></strong></td>
                     <td><?= esc($p['operateur_nom']) ?></td>
                     <td>
                         <a href="<?= base_url('operateur/prefixes/edit/' . $p['id']) ?>">Modifier</a> |

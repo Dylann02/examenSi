@@ -2,12 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clients Telma</title>
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
 </head>
 <body>
     <h1>Situation des comptes clients - Telma</h1>
-    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
-    <table border="1" cellpadding="10" cellspacing="0">
+    <p><a href="<?= site_url('operateur/') ?>">Retour au dashboard</a></p>
+
+    <table>
         <thead>
             <tr>
                 <th>Numéro</th>
@@ -27,7 +30,7 @@
                         <td><?= esc($client['nom'] . ' ' . $client['prenom']) ?></td>
                         <td><?= esc($client['cin'] ?? 'N/A') ?></td>
                         <td><strong><?= esc($client['operateur']) ?></strong></td>
-                        <td><?= number_format($client['solde'], 2, ',', ' ') ?> Ar</td>
+                        <td><strong><?= number_format($client['solde'], 2, ',', ' ') ?> Ar</strong></td>
                         <td><?= esc($client['etat']) ?></td>
                         <td>
                             <a href="<?= base_url('operateur/clients/historique/' . $client['id_numero']) ?>">
@@ -38,7 +41,7 @@
                 <?php endforeach; ?>
             <?php else : ?>
                 <tr>
-                    <td colspan="7" style="text-align: center;">Aucun client Telma trouvé.</td>
+                    <td colspan="7" class="text-center">Aucun client Telma trouvé.</td>
                 </tr>
             <?php endif; ?>
         </tbody>

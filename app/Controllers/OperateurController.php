@@ -26,12 +26,20 @@ class OperateurController extends BaseController
     }
 
     // Situation des gains de l'opérateur via les frais
-    public function gains()
-    {
-        $idTelma = 1;
-        $data['transactions'] = $this->transactionModel->getDetailGainsOperateur($idTelma);
-        return view('operateur/gains', $data);
-    }
+  public function gains()
+{
+    $transactionModel = new \App\Models\TransactionModel();
+    $idTelma = 1;
+
+    $data = [
+        'gains_internes'     => $transactionModel->getGainsInternesTelma($idTelma),
+        'gains_externes'     => $transactionModel->getGainsExternesTelma($idTelma),
+        'montants_a_envoyer' => $transactionModel->getMontantsAEnvoyerParOperateur($idTelma),
+        'transactions'       => $transactionModel->getDetailGainsOperateur($idTelma),
+    ];
+
+    return view('operateur/gains', $data);
+}
 
     // Situation globale des comptes clients
     public function suiviClients()

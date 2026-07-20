@@ -8,14 +8,12 @@ class TypeOperationSeeder extends Seeder
 {
     public function run()
     {
-        // 1. Vide la table pour éviter le "UNIQUE constraint failed"
         $this->db->table('type_operation')->truncate();
 
-        // 2. Réinsère les types d'opérations avec leurs ID fixes
         $data = [
-            ['id' => 1, 'nom' => 'Depot'],
-            ['id' => 2, 'nom' => 'Retrait'],
-            ['id' => 3, 'nom' => 'Transfert'],
+            ['id' => 1, 'nom' => 'DEPOT'],
+            ['id' => 2, 'nom' => 'RETRAIT'],
+            ['id' => 3, 'nom' => 'TRANSFERT'],
         ];
 
         $this->db->table('type_operation')->insertBatch($data);
