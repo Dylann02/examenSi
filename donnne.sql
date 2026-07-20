@@ -1,7 +1,3 @@
--- ==========================
--- INSERTS DE BASE
--- ==========================
-
 INSERT INTO operateur(nom)
 VALUES
 ('Orange Money'),

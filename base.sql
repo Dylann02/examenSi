@@ -1,18 +1,10 @@
-DROP DATABASE IF EXISTS mobile_money;
-CREATE DATABASE mobile_money;
-USE mobile_money;
-
--- ==========================
 -- TABLE OPERATEUR
--- ==========================
 CREATE TABLE operateur (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL
 );
 
--- ==========================
 -- TABLE PREFIXE
--- ==========================
 CREATE TABLE prefixe (
     id INT AUTO_INCREMENT PRIMARY KEY,
     prefixe VARCHAR(3) NOT NULL UNIQUE,
@@ -22,9 +14,7 @@ CREATE TABLE prefixe (
         REFERENCES operateur(id)
 );
 
--- ==========================
 -- TABLE CLIENT
--- ==========================
 CREATE TABLE client (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
@@ -32,9 +22,7 @@ CREATE TABLE client (
     cin VARCHAR(20) UNIQUE
 );
 
--- ==========================
 -- TABLE NUMERO
--- ==========================
 CREATE TABLE numero (
     id INT AUTO_INCREMENT PRIMARY KEY,
 
@@ -55,9 +43,8 @@ CREATE TABLE numero (
         REFERENCES operateur(id)
 );
 
--- ==========================
+
 -- TABLE TYPE OPERATION
--- ==========================
 CREATE TABLE type_operation (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,9 +52,7 @@ CREATE TABLE type_operation (
     nom VARCHAR(30) UNIQUE NOT NULL
 );
 
--- ==========================
 -- TABLE BAREME
--- ==========================
 CREATE TABLE bareme (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -84,9 +69,7 @@ CREATE TABLE bareme (
         REFERENCES type_operation(id)
 );
 
--- ==========================
 -- TABLE TRANSACTION
--- ==========================
 CREATE TABLE transaction_mm (
 
     id INT AUTO_INCREMENT PRIMARY KEY,
