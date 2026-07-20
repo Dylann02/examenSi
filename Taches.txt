@@ -28,7 +28,7 @@ Client:
         -> Via numero
         -> Bouton Se connecter en tant qu'operateur avec mot de passe lors de l'authentification
             -nom operateur
-            -mot de passe 
+            -mot de passe
     -Action:
         -solde  -> voir solde 
         -depot 
@@ -36,5 +36,9 @@ Client:
         -transfert
         -historique -> voir historique
             -liste Transaction du client connecter 
+
+
+
+
 
      
