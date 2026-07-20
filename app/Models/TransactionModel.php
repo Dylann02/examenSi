@@ -189,6 +189,8 @@ class TransactionModel extends Model
         return $db->transStatus() ? 'success' : 'error';
     }
 
+
+
    /**
  * Calcule le total des gains (somme des frais) et le nombre de transactions réussies.
  * Si $idOperateur est passé en paramètre, filtre uniquement pour cet opérateur.
@@ -211,6 +213,7 @@ public function getGainsParOperateur(?int $idOperateurFilter = null)
     // Application du filtre si un opérateur est sélectionné
     if (!empty($idOperateurFilter)) {
         $builder->where('o.id', $idOperateurFilter);
+
     }
 
     return $builder->get()->getResultArray();
