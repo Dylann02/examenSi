@@ -15,12 +15,11 @@ Migration de la base (10min)  (ETU003952)
 Donnee de test(Seeds) (10min) (ETU003952)
 
 Gestion Operateur : (ETU003952)
-    -Gestion prefixe :CRUD 
-        
-    -Bareme  de l'operateur : CRUD 
-    -Gain:affichage du solde de l'operateur 
-    -Suivi client 
-    -Historique transaction de chaque client 
+    -Gestion prefixe :CRUD (ok)
+    -Bareme  de l'operateur : CRUD (ok)
+    -Gain:affichage du solde de l'operateur (ok)
+    -Suivi client (ok)
+    -Historique transaction de chaque client (ok)
 
 Client:
     -LOGIN:

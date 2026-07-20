@@ -8,14 +8,19 @@ class BaremeSeeder extends Seeder
 {
     public function run()
     {
-        // Nettoyage de la table
+        // Nettoyage de la table bareme
         $this->db->table('bareme')->truncate();
 
-        // Récupération des opérateurs en base
-        $operateurs = $this->db->table('operateur')->get()->getResultArray();
-        $operateurIds = !empty($operateurs) ? array_column($operateurs, 'id') : [1, 2, 3];
+        // Récupération de l'ID de Telma
+        $telma = $this->db->table('operateur')
+            ->where('LOWER(nom)', 'telma')
+            ->get()
+            ->getRowArray();
 
-        // Modèle de grille tarifaire par défaut
+        // ID de secours (ex: 1) si l'opérateur n'existe pas encore en BDD
+        $idTelma = $telma['id'] ?? 1;
+
+        // Grille tarifaire unique pour Telma
         $baseBaremes = [
             // ==========================================
             // 1. DEPOT (id_operation = 1)
@@ -53,16 +58,11 @@ class BaremeSeeder extends Seeder
             ['id_operation' => 3, 'montant_min' => 2000001, 'montant_max' => 5000000, 'frais' => 5000],
         ];
 
-        $data = [];
-
-        // Duplication des barèmes pour chaque opérateur
-        foreach ($operateurIds as $idOperateur) {
-            foreach ($baseBaremes as $bareme) {
-                $item = $bareme;
-                $item['id_operateur'] = $idOperateur;
-                $data[] = $item;
-            }
-        }
+        // Association de chaque ligne uniquement à Telma
+        $data = array_map(function ($bareme) use ($idTelma) {
+            $bareme['id_operateur'] = $idTelma;
+            return $bareme;
+        }, $baseBaremes);
 
         $this->db->table('bareme')->insertBatch($data);
     }
