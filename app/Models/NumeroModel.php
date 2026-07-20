@@ -12,9 +12,8 @@ class NumeroModel extends Model
     protected $allowedFields    = ['numero', 'solde', 'etat', 'id_client', 'id_operateur'];
     protected $returnType       = 'array';
 
-    /**
-     * Tâche LOGIN : Vérifie le numéro et l'inscrit automatiquement s'il est valide
-     */
+
+    //Vérifie le numéro et l'inscrit automatiquement s'il est valide
     public function loginAutomatique(string $num)
     {
         // 1. Vérifier si le numéro existe déjà
@@ -44,7 +43,7 @@ class NumeroModel extends Model
         $idClient = $clientModel->insert([
             'nom'    => 'Client_' . $num,
             'prenom' => 'Auto',
-            'cin'    => null // Optionnel au début
+            'cin'    => null 
         ]);
 
         // 4. Création du Numéro associé
@@ -57,5 +56,20 @@ class NumeroModel extends Model
         ]);
 
         return ['status' => 'success', 'data' => $this->find($idNumero)];
+    }
+
+    // Tâche SUIVI CLIENT : Liste les comptes clients avec leurs détails et soldes
+    public function getSituationComptes(?int $idOperateur = null)
+    {
+        $builder = $this->db->table($this->table . ' n')
+            ->select('n.id as id_numero, n.numero, n.solde, n.etat, c.nom, c.prenom, c.cin, o.nom as operateur')
+            ->join('client c', 'c.id = n.id_client')
+            ->join('operateur o', 'o.id = n.id_operateur');
+
+        if ($idOperateur) {
+            $builder->where('n.id_operateur', $idOperateur);
+        }
+
+        return $builder->get()->getResultArray();
     }
 }

@@ -12,7 +12,6 @@ class TypeOperationModel extends Model
     protected $returnType       = 'array';
     protected $allowedFields    = ['nom'];
 
-    // Validation
     protected $validationRules = [
         'nom' => 'required|max_length[30]|is_unique[type_operation.nom,id,{id}]',
     ];

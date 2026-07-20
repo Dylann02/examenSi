@@ -8,28 +8,29 @@ class BaremeModel extends Model
 {
     protected $table            = 'bareme';
     protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-    protected $allowedFields    = ['id_operation', 'montant_min', 'montant_max', 'frais'];
-
-    // Validation
-    protected $validationRules = [
-        'id_operation' => 'required|is_natural_no_zero|is_not_unique[type_operation.id]',
-        'montant_min'  => 'permit_empty|numeric',
-        'montant_max'  => 'permit_empty|numeric',
-        'frais'        => 'required|numeric',
-    ];
+    protected $allowedFields    = ['id_operation', 'id_operateur', 'montant_min', 'montant_max', 'frais'];
 
     /**
-     * Récupère le frais applicable selon l'opération et le montant
+     * Récupère les barèmes avec les noms d'opérateur et de type d'opération,
+     * en appliquant les filtres optionnels.
      */
-    public function getFrais(int $idOperation, float $montant): float
+    public function getBaremesWithDetails(?int $idOperateur = null, ?int $idOperation = null): array
     {
-        $result = $this->where('id_operation', $idOperation)
-                       ->where('montant_min <=', $montant)
-                       ->where('montant_max >=', $montant)
-                       ->first();
+        $builder = $this->select('bareme.*, type_operation.nom as operation_nom, operateur.nom as operateur_nom')
+                        ->join('type_operation', 'type_operation.id = bareme.id_operation')
+                        ->join('operateur', 'operateur.id = bareme.id_operateur');
 
-        return $result ? (float) $result['frais'] : 0.0;
+        if (!empty($idOperateur)) {
+            $builder->where('bareme.id_operateur', $idOperateur);
+        }
+
+        if (!empty($idOperation)) {
+            $builder->where('bareme.id_operation', $idOperation);
+        }
+
+        return $builder->orderBy('bareme.id_operateur', 'ASC')
+                       ->orderBy('bareme.id_operation', 'ASC')
+                       ->orderBy('bareme.montant_min', 'ASC')
+                       ->findAll();
     }
 }

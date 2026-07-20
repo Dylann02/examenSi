@@ -11,9 +11,7 @@ class TransactionModel extends Model
     protected $allowedFields    = ['montant', 'frais', 'statut', 'id_operation', 'id_numero_source', 'id_numero_destination'];
     protected $returnType       = 'array';
 
-    /**
-     * Tâche HISTORIQUE : Récupère toutes les transactions impliquant le numéro connecté
-     */
+    // Tâche HISTORIQUE : Récupère toutes les transactions impliquant le numéro connecté
     public function getHistoriqueClient(int $idNumero)
     {
         return $this->select('transaction_mm.*, type_operation.nom as type_nom')
@@ -24,15 +22,14 @@ class TransactionModel extends Model
                     ->findAll();
     }
 
-    /**
-     * Récupère le frais exact depuis la table bareme
-     */
-    public function getFrais(string $typeOperation, float $montant)
+    // Récupère le frais exact depuis la table bareme pour UN opérateur donné
+    public function getFrais(string $typeOperation, int $idOperateur, float $montant)
     {
         $db = \Config\Database::connect();
         $row = $db->table('bareme')
                   ->join('type_operation', 'type_operation.id = bareme.id_operation')
                   ->where('type_operation.nom', $typeOperation)
+                  ->where('bareme.id_operateur', $idOperateur) // <-- Filtrer par opérateur
                   ->where('montant_min <=', $montant)
                   ->where('montant_max >=', $montant)
                   ->get()
@@ -40,7 +37,6 @@ class TransactionModel extends Model
                   
         return $row ? (float)$row['frais'] : 0.00;
     }
-
     /**
      * Tâche ACTION : DEPOT (Automatique)
      */
@@ -68,9 +64,7 @@ class TransactionModel extends Model
         return $db->transStatus();
     }
 
-    /**
-     * Tâche ACTION : RETRAIT (Automatique avec calcul des frais)
-     */
+    //  Tâche ACTION : RETRAIT (Automatique avec calcul des frais)
     public function executerRetrait(int $idNumero, float $montant)
     {
         $frais = $this->getFrais('RETRAIT', $montant);
@@ -104,9 +98,7 @@ class TransactionModel extends Model
         return $db->transStatus();
     }
 
-    /**
-     * Tâche ACTION : TRANSFERT
-     */
+    // Tâche ACTION : TRANSFERT
     public function executerTransfert(int $idSource, string $numDest, float $montant)
     {
         $numeroModel = new NumeroModel();
@@ -149,5 +141,37 @@ class TransactionModel extends Model
 
         $db->transComplete();
         return $db->transStatus() ? 'success' : 'error';
+    }
+
+    // Tâche GAIN : Calcule le total des frais perçus (Retrait et Transfert)
+    public function getGainsOperateur(?int $idOperateur = null)
+    {
+        $builder = $this->db->table($this->table . ' t')
+            ->select('SUM(t.frais) as total_gains, COUNT(t.id) as total_transactions')
+            ->where('t.statut', 'SUCCES');
+
+        if ($idOperateur) {
+            $builder->join('numero n', 'n.id = t.id_numero_source')
+                    ->where('n.id_operateur', $idOperateur);
+        }
+
+        return $builder->get()->getRowArray();
+    }
+
+    // Tâche HISTORIQUE CLIENT : Récupère les transactions d'un client précis pour l'opérateur
+    public function getHistoriqueCompletClient(int $idNumero)
+    {
+        return $this->db->table($this->table . ' t')
+            ->select('t.*, top.nom as type_operation, ns.numero as source, nd.numero as destination')
+            ->join('type_operation top', 'top.id = t.id_operation')
+            ->join('numero ns', 'ns.id = t.id_numero_source', 'left')
+            ->join('numero nd', 'nd.id = t.id_numero_destination', 'left')
+            ->groupStart()
+                ->where('t.id_numero_source', $idNumero)
+                ->orWhere('t.id_numero_destination', $idNumero)
+            ->groupEnd()
+            ->orderBy('t.date_transaction', 'DESC')
+            ->get()
+            ->getResultArray();
     }
 }
