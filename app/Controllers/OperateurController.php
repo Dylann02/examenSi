@@ -16,6 +16,15 @@ class OperateurController extends BaseController
         $this->numeroModel      = new NumeroModel();
     }
 
+    /**
+     * Page d'accueil du panel opérateur (Tableau de bord)
+     */
+    public function index()
+    {
+        // Affiche la vue avec les 4 gros boutons d'action
+        return view('operateur/dahsboard');
+    }
+
     // Situation des gains de l'opérateur via les frais
     public function gains()
     {
@@ -37,31 +46,27 @@ class OperateurController extends BaseController
         $data['id_numero']  = $idNumero;
         return view('operateur/historique_client', $data);
     }
+
+    /**
+     * Gestion de la connexion Admin / Opérateur
+     */
     public function handleLogin()
     {
-        $nom = $this->request->getPost('nom_operateur');
-        $mdp = $this->request->getPost('mdp_operateur');
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
 
-        // 1. Validation des champs vides
-        if (empty($nom) || empty($mdp)) {
-            return redirect()->back()->with('error', 'Veuillez remplir tous les champs.');
+        // Vérification brute avec tes identifiants (admin / admin)
+        if ($username === 'admin' && $password === 'admin') {
+            
+            session()->set([
+                'isLoggedIn' => true, 
+                'role'       => 'operateur'
+            ]);
+            
+            // Redirection vers l'accueil du groupe 'operateur' (qui appelle la méthode index())
+            return redirect()->to(base_url('operateur'));
+        } else {
+            return redirect()->back()->with('error', 'Identifiants incorrects');
         }
-
-        // 2. Vérification stricte des identifiants admin
-        if ($nom !== 'admin' || $mdp !== 'admin') {
-            return redirect()->back()->with('error', 'Identifiants administrateur incorrects.');
-        }
-
-        // 3. Stockage en session
-        $session = \Config\Services::session();
-        $session->set('operateur_nom', 'Administrateur');
-
-        // Message de succès personnalisé pour la gestion globale
-        return "<div style='font-family: sans-serif; text-align: center; margin-top: 100px;'>
-                    <h1 style='color: #203764;'>Connexion Réussie — Espace Admin</h1>
-                    <p>Bienvenue dans le panneau de gestion globale des opérateurs.</p>
-                </div>";
     }
-
-
 }

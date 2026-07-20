@@ -19,7 +19,7 @@
         <p class="error"><?= session()->getFlashdata('error') ?></p>
     <?php endif; ?>
 
-    <div class="login-container">
+<div class="login-container">
         
         <!-- FORMULAIRE CLIENT : LOGIN AUTOMATIQUE -->
         <div class="box">
@@ -33,26 +33,23 @@
                 <button type="submit">Se connecter</button>
             </form>
         </div>
-        <!-- FORMULAIRE ADMIN / GESTION DES OPERATEURS -->
-        <div class="box" style="background-color: #f9f9f9;">
+
+        <!-- FORMULAIRE ADMIN / OPERATEUR -->
+        <div class="box">
             <h3>Espace Admin</h3>
-            <form action="<?= base_url('operateur/handleLogin') ?>" method="post">
+            <form action="<?= base_url('operateur/handleLogin') ?>" method="POST">
                 <?= csrf_field() ?>
                 <p>
-                    <label for="nom_operateur">Identifiant :</label><br>
-                    <input type="text" id="nom_operateur" name="nom_operateur" placeholder="ex: admin" required>
+                    <label>Identifiant :</label><br>
+                    <input type="text" name="username" placeholder="ex: admin" required>
                 </p>
                 <p>
-                    <label for="mot_de_passe">Mot de passe :</label><br>
-                    <input type="password" id="mot_de_passe" name="mdp_operateur" placeholder="••••••••" required>
+                    <label>Mot de passe :</label><br>
+                    <input type="password" name="password" required>
                 </p>
-                <button type="submit" style="background-color: #007BFF; color: white; border: none; padding: 10px; cursor: pointer; width: 100%;">
-                    Se connecter
-                </button>
+                <button type="submit">Se connecter</button>
             </form>
         </div>
-
-
 
     </div>
 

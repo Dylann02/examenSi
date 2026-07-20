@@ -16,9 +16,7 @@ class ClientController extends BaseController
 
     public function login()
     {
-        if ($this->session->has('client_numero')) {
-            return redirect()->to('/client/dashboard');
-        }
+        // On supprime la redirection automatique pour forcer l'affichage du login.php
         return view('client/login');
     }
 
