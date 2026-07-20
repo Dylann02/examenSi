@@ -1,7 +1,0 @@
-CREATE DATABASE produits;
-
-CREATE TABLE produit (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(30),
-    prix FLOAT
-);

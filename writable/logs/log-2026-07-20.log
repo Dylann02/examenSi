@@ -1,0 +1,106 @@
+ERROR - 2026-07-20 07:16:47 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'produits', 3306, '', 0)
+#1 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-07-20 07:17:49 --> ErrorException: Undefined property: Config\Database::$defaultGroup
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/MigrationRunner.php on line 154.
+ 1 SYSTEMPATH/Database/MigrationRunner.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Database::$defaultGroup', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php', 154)
+ 2 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 3 SYSTEMPATH/Config/BaseService.php(325): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 4 SYSTEMPATH/Config/BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 5 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 6 SYSTEMPATH/Config/BaseService.php(334): CodeIgniter\Config\Services::migrations()
+ 7 SYSTEMPATH/Config/BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+ 8 SYSTEMPATH/Common.php(1078): CodeIgniter\Config\BaseService::get('migrations')
+ 9 SYSTEMPATH/Commands/Database/Migrate.php(73): service('migrations')
+10 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+11 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+12 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+13 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+14 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-07-20 07:19:01 --> ErrorException: Undefined property: Config\Database::$defaultGroup
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/MigrationRunner.php on line 154.
+ 1 SYSTEMPATH/Database/MigrationRunner.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Database::$defaultGroup', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php', 154)
+ 2 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 3 SYSTEMPATH/Config/BaseService.php(325): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 4 SYSTEMPATH/Config/BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 5 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 6 SYSTEMPATH/Config/BaseService.php(334): CodeIgniter\Config\Services::migrations()
+ 7 SYSTEMPATH/Config/BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+ 8 SYSTEMPATH/Common.php(1078): CodeIgniter\Config\BaseService::get('migrations')
+ 9 SYSTEMPATH/Commands/Database/Migrate.php(73): service('migrations')
+10 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+11 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+12 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+13 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+14 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-07-20 07:20:17 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'produits', 3306, '', 0)
+#1 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/system/Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 /Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
