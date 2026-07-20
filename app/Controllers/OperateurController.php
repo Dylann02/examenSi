@@ -57,11 +57,11 @@ class OperateurController extends BaseController
         $session->set('operateur_nom', 'Administrateur');
 
         // Message de succès personnalisé pour la gestion globale
-        return "<div style='font-family: sans-serif; text-align: center; margin-top: 100px;'>
-                    <h1 style='color: #203764;'>Connexion Réussie — Espace Admin</h1>
-                    <p>Bienvenue dans le panneau de gestion globale des opérateurs.</p>
-                </div>";
+        return view('operateur/dashboard');
     }
-
+    public function dashboard()
+{
+    return view('operateur/dashboard');
+}
 
 }
