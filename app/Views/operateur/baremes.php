@@ -16,7 +16,8 @@
     <?php if (session()->getFlashdata('error')): ?>
         <p style="color:red;"><?= session()->getFlashdata('error') ?></p>
     <?php endif; ?>
-
+    
+    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
     <!-- FORMULAIRE DE MODIFICATION -->
     <?php if (isset($bareme_a_modifier)): ?>
         <h3>Modifier le barème #<?= $bareme_a_modifier['id'] ?></h3>
@@ -42,12 +43,10 @@
             </select>
 
             <label>Montant Min :</label>
-            <input type="number" step="0.01" name="montant_min" value="<?= esc($bareme_a_modifier['montant_min']) ?>"
-                required>
+            <input type="number" step="0.01" name="montant_min" value="<?= esc($bareme_a_modifier['montant_min']) ?>" required>
 
             <label>Montant Max :</label>
-            <input type="number" step="0.01" name="montant_max" value="<?= esc($bareme_a_modifier['montant_max']) ?>"
-                required>
+            <input type="number" step="0.01" name="montant_max" value="<?= esc($bareme_a_modifier['montant_max']) ?>" required>
 
             <label>Frais (Ar) :</label>
             <input type="number" step="0.01" name="frais" value="<?= esc($bareme_a_modifier['frais']) ?>" required>
@@ -57,18 +56,12 @@
         </form>
         <hr>
 
-        <!-- FORMULAIRE D'AJOUT -->
+    <!-- FORMULAIRE D'AJOUT -->
     <?php else: ?>
         <h3>Ajouter une tranche de barème</h3>
         <form action="<?= base_url('operateur/baremes/store') ?>" method="post">
             <?= csrf_field() ?>
-
-            <label>Opérateur :</label>
-            <select name="id_operateur" required>
-                <?php foreach ($operateurs as $op): ?>
-                    <option value="<?= $op['id'] ?>"><?= esc($op['nom']) ?></option>
-                <?php endforeach; ?>
-            </select>
+            <input type="hidden" name="id_operateur" value="1">
 
             <label>Type Opération :</label>
             <select name="id_operation" required>
@@ -91,39 +84,7 @@
         <hr>
     <?php endif; ?>
 
-    <!-- FORMULAIRE DE FILTRAGE COMBINÉ -->
-    <form method="get" action="<?= base_url('operateur/baremes') ?>"
-        style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-        <div>
-            <label for="filter_operateur"><strong>Opérateur :</strong></label>
-            <select name="operateur" id="filter_operateur" onchange="this.form.submit()">
-                <option value="">-- Tous les opérateurs --</option>
-                <?php foreach ($operateurs as $op): ?>
-                    <option value="<?= $op['id'] ?>" <?= (isset($selected_operateur) && $selected_operateur == $op['id']) ? 'selected' : '' ?>>
-                        <?= esc($op['nom']) ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-
-        <div>
-            <label for="filter_operation"><strong>Type d'opération :</strong></label>
-            <select name="operation" id="filter_operation" onchange="this.form.submit()">
-                <option value="">-- Toutes les opérations --</option>
-                <?php foreach ($operations as $op): ?>
-                    <option value="<?= $op['id'] ?>" <?= (isset($selected_operation) && $selected_operation == $op['id']) ? 'selected' : '' ?>>
-                        <?= esc($op['nom']) ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-
-        <?php if (!empty($selected_operateur) || !empty($selected_operation)): ?>
-            <a href="<?= base_url('operateur/baremes') ?>" style="text-decoration: none; color: red;">✖ Réinitialiser les
-                filtres</a>
-        <?php endif; ?>
-    </form>
-   
+    <!-- TABLEAU DES BARÈMES -->
     <h3>Barèmes actuels</h3>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
@@ -141,14 +102,11 @@
                     <tr>
                         <td><strong><?= esc($b['operateur_nom'] ?? 'N/A') ?></strong></td>
                         <td><?= esc($b['operation_nom']) ?></td>
-                        <td>De <?= number_format($b['montant_min'], 2, ',', ' ') ?> à
-                            <?= number_format($b['montant_max'], 2, ',', ' ') ?> Ar
-                        </td>
+                        <td>De <?= number_format($b['montant_min'], 2, ',', ' ') ?> à <?= number_format($b['montant_max'], 2, ',', ' ') ?> Ar</td>
                         <td><?= number_format($b['frais'], 2, ',', ' ') ?> Ar</td>
                         <td>
                             <a href="<?= base_url('operateur/baremes/edit/' . $b['id']) ?>">Modifier</a> |
-                            <a href="<?= base_url('operateur/baremes/delete/' . $b['id']) ?>"
-                                onclick="return confirm('Supprimer ce barème ?')">Supprimer</a>
+                            <a href="<?= base_url('operateur/baremes/delete/' . $b['id']) ?>" onclick="return confirm('Supprimer ce barème ?')">Supprimer</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

@@ -14,7 +14,7 @@ $routes->group('operateur', function ($routes) {
     
     // Gains & Suivi
     $routes->get('gains', 'OperateurController::gains');
-    $routes->get('clients', 'OperateurController::suiviClients');
+    $routes->get('clients', 'OperateurController::clients');
     $routes->get('clients/historique/(:num)', 'OperateurController::historiqueClient/$1');
     $routes->post('handleLogin', 'OperateurController::handleLogin');
 

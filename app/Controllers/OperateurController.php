@@ -13,7 +13,7 @@ class OperateurController extends BaseController
     public function __construct()
     {
         $this->transactionModel = new TransactionModel();
-        $this->numeroModel      = new NumeroModel();
+        $this->numeroModel = new NumeroModel();
     }
 
     /**
@@ -26,25 +26,12 @@ class OperateurController extends BaseController
     }
 
     // Situation des gains de l'opérateur via les frais
- public function gains()
-{
-    $selectedOperateur = $this->request->getGet('id_operateur');
-
-    $db = \Config\Database::connect();
-    
-    // 1. Liste complète des opérateurs pour le <select>
-    $data['operateurs_list'] = $db->table('operateur')->get()->getResultArray();
-
-    // 2. Gains calculés par opérateur
-    $data['gains_par_operateur'] = $this->transactionModel->getGainsParOperateur(
-        !empty($selectedOperateur) ? (int)$selectedOperateur : null
-    );
-
-    // 3. Valeur sélectionnée pour conserver l'option dans le filtre
-    $data['selected_operateur'] = $selectedOperateur;
-
-    return view('operateur/gains', $data);
-}
+    public function gains()
+    {
+        $idTelma = 1;
+        $data['transactions'] = $this->transactionModel->getDetailGainsOperateur($idTelma);
+        return view('operateur/gains', $data);
+    }
 
     // Situation globale des comptes clients
     public function suiviClients()
@@ -57,7 +44,7 @@ class OperateurController extends BaseController
     public function historiqueClient($idNumero)
     {
         $data['historique'] = $this->transactionModel->getHistoriqueCompletClient($idNumero);
-        $data['id_numero']  = $idNumero;
+        $data['id_numero'] = $idNumero;
         return view('operateur/historique_client', $data);
     }
 
@@ -74,7 +61,7 @@ class OperateurController extends BaseController
 
             session()->set([
                 'isLoggedIn' => true,
-                'role'       => 'operateur'
+                'role' => 'operateur'
             ]);
 
             // Redirection vers l'accueil du groupe 'operateur' (qui appelle la méthode index())
@@ -98,5 +85,12 @@ class OperateurController extends BaseController
     public function dashboard()
     {
         return view('operateur/dashboard');
+    }
+    public function clients()
+    {
+        $numeroModel = model('App\Models\NumeroModel');
+        $data['clients'] = $numeroModel->getClientsTelma();
+
+        return view('operateur/clients', $data);
     }
 }

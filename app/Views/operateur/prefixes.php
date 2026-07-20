@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Configuration des préfixes valables de l'opérateur</h1>
-
+    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
     <?php if (session()->getFlashdata('success')): ?>
         <p style="color:green;"><?= session()->getFlashdata('success') ?></p>
     <?php endif; ?>

@@ -222,4 +222,21 @@ class TransactionModel extends Model
             ->get()
             ->getResultArray();
     }
+
+   public function getDetailGainsOperateur(int $idOperateur)
+{
+    return $this->db->table('transaction_mm t')
+        ->select('t.*, 
+                  n.numero as numero_source, 
+                  c.nom as nom_client, 
+                  op.nom as nom_operation') 
+        ->join('numero n', 'n.id = t.id_numero_source')
+        ->join('client c', 'c.id = n.id_client', 'left')
+        ->join('type_operation op', 'op.id = t.id_operation', 'left')
+        ->where('n.id_operateur', $idOperateur)
+        ->where('t.statut', 'SUCCES')
+        ->orderBy('t.id', 'DESC')
+        ->get()
+        ->getResultArray();
+}
 }

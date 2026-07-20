@@ -69,4 +69,19 @@ class NumeroModel extends Model
 
         return $builder->get()->getResultArray();
     }
+
+ public function getClientsTelma()
+{
+    // Remplace 1 par l'ID exact de Telma dans ta table 'operateur'
+    $idTelma = 1; 
+
+    return $this->db->table('numero n')
+        ->select('n.id as id_numero, n.numero, n.solde, n.etat, c.nom, c.prenom, c.cin, op.nom as operateur')
+        ->join('client c', 'c.id = n.id_client', 'left')
+        ->join('operateur op', 'op.id = n.id_operateur', 'left')
+        ->where('n.id_operateur', $idTelma) // <-- Filtre strict sur l'ID
+        ->orderBy('c.nom', 'ASC')
+        ->get()
+        ->getResultArray();
+}
 }

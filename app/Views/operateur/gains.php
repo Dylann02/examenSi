@@ -2,72 +2,57 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Gains des Opérateurs</title>
+    <title>Détail des Gains - Telma</title>
 </head>
 <body>
-    <h1>Gain via les différents frais (Retrait & Transfert)</h1>
-
-    <!-- Formulaire de Filtre -->
-    <form method="get" action="<?= base_url('operateur/gains') ?>" style="margin-bottom: 20px;">
-        <label for="id_operateur"><strong>Filtrer par Opérateur :</strong></label>
-        <select name="id_operateur" id="id_operateur">
-            <option value="">-- Tous les opérateurs --</option>
-            <?php if (!empty($operateurs_list)) : ?>
-                <?php foreach ($operateurs_list as $op) : ?>
-                    <option value="<?= $op['id'] ?>" <?= (isset($selected_operateur) && $selected_operateur == $op['id']) ? 'selected' : '' ?>>
-                        <?= esc($op['nom']) ?>
-                    </option>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </select>
-
-        <button type="submit">Filtrer</button>
-
-        <?php if (!empty($selected_operateur)) : ?>
-            <a href="<?= base_url('operateur/gains') ?>">Réinitialiser</a>
-        <?php endif; ?>
-    </form>
-
-    <!-- Tableau des Gains par Opérateur -->
+    <h1>Historique des Gains et Frais - Telma</h1>
+    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
+    <!-- Tableau détaillé des transactions -->
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
-                <th>Opérateur</th>
-                <th>Total des Transactions Réussies</th>
-                <th>Total des Gains (Ar)</th>
+                <th>Date / Heure</th>
+                <th>Client (Expéditeur)</th>
+                <th>Type d'Opération</th>
+                <th>Montant de la Transaction</th>
+                <th>Frais / Gain (Ar)</th>
             </tr>
         </thead>
         <tbody>
             <?php 
-                $grandTotalGains = 0;
-                $grandTotalTransactions = 0;
+                $totalGains = 0;
+                $totalTransactions = 0;
             ?>
 
-            <?php if (!empty($gains_par_operateur)) : ?>
-                <?php foreach ($gains_par_operateur as $row) : 
-                    $grandTotalGains += $row['total_gains'];
-                    $grandTotalTransactions += $row['total_transactions'];
+            <?php if (!empty($transactions)) : ?>
+                <?php foreach ($transactions as $t) : 
+                    $totalGains += $t['frais'];
+                    $totalTransactions++;
                 ?>
                     <tr>
-                        <td><strong><?= esc($row['nom_operateur']) ?></strong></td>
-                        <td><?= number_format($row['total_transactions'], 0, ',', ' ') ?></td>
-                        <td><strong><?= number_format($row['total_gains'], 2, ',', ' ') ?> Ar</strong></td>
+                        <td><?= esc($t['date_transaction'] ?? $t['created_at'] ?? 'N/A') ?></td>
+                        <td>
+                            <strong><?= esc($t['nom_client'] ?? 'Client') ?></strong><br>
+                            <small>(<?= esc($t['numero_source']) ?>)</small>
+                        </td>
+                        <td><?= esc($t['nom_operation'] ?? 'N/A') ?></td>
+                        <td><?= number_format($t['montant'], 2, ',', ' ') ?> Ar</td>
+                        <td><strong><?= number_format($t['frais'], 2, ',', ' ') ?> Ar</strong></td>
                     </tr>
                 <?php endforeach; ?>
             <?php else : ?>
                 <tr>
-                    <td colspan="3" style="text-align: center;">Aucune donnée disponible.</td>
+                    <td colspan="5" style="text-align: center;">Aucune transaction enregistrée pour Telma.</td>
                 </tr>
             <?php endif; ?>
         </tbody>
 
-        <!-- Total Global en bas de tableau -->
-        <?php if (!empty($gains_par_operateur)) : ?>
+        <!-- Total résumé en bas -->
+        <?php if (!empty($transactions)) : ?>
             <tfoot>
                 <tr style="background-color: #f0f0f0;">
-                    <td><strong>TOTAL</strong></td>
-                    <td><strong><?= number_format($grandTotalTransactions, 0, ',', ' ') ?></strong></td>
-                    <td><strong><?= number_format($grandTotalGains, 2, ',', ' ') ?> Ar</strong></td>
+                    <td colspan="3"><strong>TOTAL (<?= $totalTransactions ?> transactions)</strong></td>
+                    <td colspan="2"><strong><?= number_format($totalGains, 2, ',', ' ') ?> Ar</strong></td>
                 </tr>
             </tfoot>
         <?php endif; ?>
