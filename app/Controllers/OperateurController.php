@@ -26,11 +26,25 @@ class OperateurController extends BaseController
     }
 
     // Situation des gains de l'opérateur via les frais
-    public function gains()
-    {
-        $data['gains'] = $this->transactionModel->getGainsOperateur();
-        return view('operateur/gains', $data);
-    }
+ public function gains()
+{
+    $selectedOperateur = $this->request->getGet('id_operateur');
+
+    $db = \Config\Database::connect();
+    
+    // 1. Liste complète des opérateurs pour le <select>
+    $data['operateurs_list'] = $db->table('operateur')->get()->getResultArray();
+
+    // 2. Gains calculés par opérateur
+    $data['gains_par_operateur'] = $this->transactionModel->getGainsParOperateur(
+        !empty($selectedOperateur) ? (int)$selectedOperateur : null
+    );
+
+    // 3. Valeur sélectionnée pour conserver l'option dans le filtre
+    $data['selected_operateur'] = $selectedOperateur;
+
+    return view('operateur/gains', $data);
+}
 
     // Situation globale des comptes clients
     public function suiviClients()
