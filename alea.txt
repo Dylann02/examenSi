@@ -1,0 +1,15 @@
+promotion
+ frais de transfert -> % sur le frais de transfert meme operateur  (base )
+
+base
+creation d'une table promotion
+
+alea2
+    -notion epargne
+        *client interface epargen en %
+            page = epargne 50% 
+                ilay client misafidy hoe firy % ny epargne (chaque argent transferer sur son compte donc 20% makany am )
+            
+
+
+

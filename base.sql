@@ -169,3 +169,6 @@ INSERT INTO numero(numero,solde,etat,id_client,id_operateur)
 VALUES
 ('0341234567',500000,'ACTIF',1,3),
 ('0339876543',250000,'ACTIF',2,1);
+
+
+--Alea 

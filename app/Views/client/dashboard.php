@@ -1,3 +1,4 @@
+<?php var_dump($compte);?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -73,7 +74,10 @@
         <h2>Compte Client N° : <?= esc($compte['numero']) ?></h2>
         <a href="<?= base_url('client/logout') ?>"><button>Déconnexion</button></a>
     </div>
-
+     <?php if (session()->getFlashdata('modif')): ?>
+        <p class="success"><?= session()->getFlashdata('modif') ?></p>
+    <?php endif; ?>
+    <a href="<?= site_url('client/epargne/id_client/'. $compte['id_client']) ?>">Epargne</a>
     <!-- 1. Tâche : VOIR SOLDE -->
     <div class="solde-box">
         <h3>Mon Solde : <span

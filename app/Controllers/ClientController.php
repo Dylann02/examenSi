@@ -18,7 +18,7 @@ class ClientController extends BaseController
     {
         return view('client/login');
     }
-
+   
     public function handleLogin()
     {
         $num = $this->request->getPost('numero');
@@ -42,6 +42,7 @@ class ClientController extends BaseController
                 return redirect()->back()->with('error', 'Ce numéro est bloqué.');
             }
             $this->session->set('client_numero', $compte);
+            $this->session->set('id_client',$compte['id_client']);
             return redirect()->to(base_url('client/dashboard'));
         }
 
