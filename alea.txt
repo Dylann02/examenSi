@@ -1,0 +1,10 @@
+promotion
+ frais de transfert -> % sur le frais de transfert meme operateur  (base )
+
+base
+creation d'une table promotion
+
+
+
+
+

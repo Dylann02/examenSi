@@ -143,6 +143,11 @@ class TransactionModel extends Model
 
    public function executerTransfert($idSource, $numDest, $montant, $fraisChek)
 {
+    $promotionModel = new PromotionModel();
+    $promotion  = $promotionModel->getPromotion();
+
+    
+
     $numeroModel = new NumeroModel();
     $dest = $numeroModel->where('numero', $numDest)->first();
 
@@ -182,6 +187,9 @@ class TransactionModel extends Model
     // 4. Calcul du frais d'envoi classique (Barème + Commission si inter-opérateur)
     $frais = $this->getFrais('TRANSFERT', (int)$source['id_operateur'], (int)$dest['id_operateur'], $montant);
 
+    //calcul % du frais promotionnel
+    // $frais_avec_promotion= $frais - (($promotion))
+
     // 5. Calcul du frais de retrait (UNIQUEMENT si MÊME opérateur ET checkbox cochée)
     if ((int)$source['id_operateur'] === (int)$dest['id_operateur'] && !empty($fraisChek)) {
         $fraisRetrait = $this->getFrais('RETRAIT', (int)$source['id_operateur'], (int)$dest['id_operateur'], $montant);
@@ -202,7 +210,7 @@ class TransactionModel extends Model
             return 'montant_hors_bareme';
         }
     }
-
+    
     // 7. Calcul du Total complet à débiter chez l'émetteur
     $totalADeduire = $montant + $frais + $fraisRetrait;
 
