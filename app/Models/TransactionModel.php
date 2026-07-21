@@ -11,10 +11,7 @@ class TransactionModel extends Model
     protected $allowedFields    = ['montant', 'frais', 'statut', 'id_operation', 'id_numero_source', 'id_numero_destination', 'date_transaction'];
     protected $returnType       = 'array';
 
-    // ==========================================
     // 1. HISTORIQUES CLIENT
-    // ==========================================
-
     public function getHistoriqueClient(int $idNumero)
     {
         return $this->select('transaction_mm.*, type_operation.nom as type_nom')
@@ -41,10 +38,7 @@ class TransactionModel extends Model
             ->getResultArray();
     }
 
-    // ==========================================
     // 2. GESTION DES FRAIS
-    // ==========================================
-
     public function getFrais(string $typeOperation, int $idOpSource, int $idOpDest = 0, float $montant = 0.0)
     {
         $db = \Config\Database::connect();
@@ -78,10 +72,7 @@ class TransactionModel extends Model
         return $fraisBase;
     }
 
-    // ==========================================
     // 3. EXÉCUTION DES TRANSACTIONS
-    // ==========================================
-
     public function executerDepot(int $idNumero, float $montant)
     {
         $db = \Config\Database::connect();
@@ -248,20 +239,7 @@ class TransactionModel extends Model
     $db->transComplete();
     return $db->transStatus() ? 'success' : 'error';
 }
-
-    // ==========================================
-    // 4. STATISTIQUES ET TABLEAUX DU DASHBOARD
-    // ==========================================
-
-    /**
-     * Tableau 1 (Ligne 1) : Gains MÊME OPÉRATEUR (Telma -> Telma / Retraits / Dépôts)
-     */
-   /**
- * 1. Gains sur transactions INTERNES (Telma vers Telma)
- */
-/**
- * 1. Gains INTERNES (Telma vers Telma OU Retrait/Dépôt)
- */
+// 1. Gains INTERNES (Telma vers Telma OU Retrait/Dépôt)
 public function getGainsInternesTelma(int $idTelma = 1)
 {
     $builder = $this->db->table('transaction_mm t')
@@ -277,9 +255,7 @@ public function getGainsInternesTelma(int $idTelma = 1)
     return $builder->get()->getRowArray() ?: ['total_transactions' => 0, 'total_gains' => 0];
 }
 
-/**
- * 2. Gains EXTERNES (Telma vers autre opérateur)
- */
+// 2. Gains EXTERNES (Telma vers autre opérateur)
 public function getGainsExternesTelma(int $idTelma = 1)
 {
     $builder = $this->db->table('transaction_mm t')
@@ -293,12 +269,7 @@ public function getGainsExternesTelma(int $idTelma = 1)
     return $builder->get()->getRowArray() ?: ['total_transactions' => 0, 'total_gains' => 0];
 }
 
-/**
- * Tableau 2 : Montant des commissions (ex: 2%) à reverser à chaque opérateur destinataire
- */
-/**
- * Tableau 2 : Calcul des commissions à reverser via la table commission_interoperateur
- */
+// Tableau 2 : Montant des commissions (ex: 2%) à reverser à chaque opérateur destinataire
 public function getMontantsAEnvoyerParOperateur(int $idTelma = 1)
 {
     return $this->db->table('transaction_mm t')
@@ -335,7 +306,7 @@ public function getMontantsAEnvoyerParOperateur(int $idTelma = 1)
             ->join('type_operation op', 'op.id = t.id_operation', 'left')
             ->groupStart()
                 ->where('ns.id_operateur', $idOperateur)
-                ->orWhere('t.id_numero_source IS NULL') // Inclut aussi les dépôts
+                ->orWhere('t.id_numero_source IS NULL') 
             ->groupEnd()
             ->whereIn('UPPER(t.statut)', ['SUCCES', 'SUCCESS'])
             ->orderBy('t.id', 'DESC')

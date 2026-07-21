@@ -1,0 +1,15 @@
+-commande creation des fichier de migration(construction des tables)
+    php spark make:migration CreateUsersTable
+        *mettre les attributs utiliser et le nom de la table
+    -Enfin :php spark migrate (pour construire la base.db avec les table)
+
+-commande pour creer le fichier qui va contenir les donnees de test(php spark make:seeder AppSeeder)
+    *php spark db:seed MainSeede (commande pour l'insertion des donnees)
+
+-commande pour ajouter un nouveau tag
+    *ex:git tag -a v3 -m "v3"
+
+- Reset la base 
+php spark migrate:refresh 
+
+-
