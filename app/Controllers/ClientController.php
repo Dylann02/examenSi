@@ -113,6 +113,7 @@ class ClientController extends BaseController
         $idSource = $this->session->get('client_numero')['id'];
         $action = $this->request->getPost('action');
         $montant = (float) $this->request->getPost('montant');
+        
 
         if ($montant <= 0) {
             return redirect()->back()->with('error', 'Le montant doit être supérieur à 0 Ar.');
@@ -135,11 +136,13 @@ class ClientController extends BaseController
 
             case 'transfert':
                 $numDest = $this->request->getPost('numero_dest');
+                $frais = $this->request->getPost('frais_retrait');
+
                 if (empty($numDest)) {
                     return redirect()->back()->with('error', 'Le numéro du destinataire est requis.');
                 }
-
-                $res = $transactionModel->executerTransfert($idSource, $numDest, $montant);
+                
+                $res = $transactionModel->executerTransfert($idSource, $numDest, $montant,$frais);
                 if ($res === 'success') {
                     return redirect()->back()->with('success', 'Transfert effectué avec succès.');
                 } elseif ($res === 'dest_introuvable') {
@@ -151,6 +154,8 @@ class ClientController extends BaseController
                 } elseif ($res === 'transfert_non_autorise') {
                     // Capter l'interdiction entre les opérateurs non autorisés
                     return redirect()->back()->with('error', 'Les transferts directs entre ces deux opérateurs ne sont pas autorisés.');
+                }elseif($res === 'numero_inexistant'){
+                    return redirect()->back()->with('error', 'Le numero saisie n existe pas');
                 }
                 break;
         }

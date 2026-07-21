@@ -8,6 +8,8 @@ class CommissionSeeder extends Seeder
 {
     public function run()
     {
+        $this->db->table('commission_interoperateur')->truncate();
+
         $data = [
             [
                 'id_operateur_source' => 1, // Telma
@@ -21,7 +23,6 @@ class CommissionSeeder extends Seeder
             ],
         ];
 
-        // insertBatch permet d'insérer efficacement toutes les lignes en une seule requête
         $this->db->table('commission_interoperateur')->insertBatch($data);
     }
 }

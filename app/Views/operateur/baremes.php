@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Barèmes de Frais</title>
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
 </head>
-
 <body>
     <h1>Création et modification des barèmes de frais par opérateur</h1>
+    <p><a href="<?= site_url('operateur/') ?>">Retour au dashboard</a></p>
 
     <?php if (session()->getFlashdata('success')): ?>
-        <p style="color:green;"><?= session()->getFlashdata('success') ?></p>
+        <p class="alert-success"><?= session()->getFlashdata('success') ?></p>
     <?php endif; ?>
 
     <?php if (session()->getFlashdata('error')): ?>
-        <p style="color:red;"><?= session()->getFlashdata('error') ?></p>
+        <p class="alert-error"><?= session()->getFlashdata('error') ?></p>
     <?php endif; ?>
-    
-    <a href="<?= site_url('operateur/') ?>">retour au dashboard</a>
+
     <!-- FORMULAIRE DE MODIFICATION -->
     <?php if (isset($bareme_a_modifier)): ?>
         <h3>Modifier le barème #<?= $bareme_a_modifier['id'] ?></h3>
@@ -52,7 +52,7 @@
             <input type="number" step="0.01" name="frais" value="<?= esc($bareme_a_modifier['frais']) ?>" required>
 
             <button type="submit">Mettre à jour</button>
-            <a href="<?= base_url('operateur/baremes') ?>">Annuler</a>
+            <a href="<?= base_url('operateur/baremes') ?>" class="btn-cancel">Annuler</a>
         </form>
         <hr>
 
@@ -86,7 +86,7 @@
 
     <!-- TABLEAU DES BARÈMES -->
     <h3>Barèmes actuels</h3>
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table>
         <thead>
             <tr>
                 <th>Opérateur</th>
@@ -103,7 +103,7 @@
                         <td><strong><?= esc($b['operateur_nom'] ?? 'N/A') ?></strong></td>
                         <td><?= esc($b['operation_nom']) ?></td>
                         <td>De <?= number_format($b['montant_min'], 2, ',', ' ') ?> à <?= number_format($b['montant_max'], 2, ',', ' ') ?> Ar</td>
-                        <td><?= number_format($b['frais'], 2, ',', ' ') ?> Ar</td>
+                        <td><strong><?= number_format($b['frais'], 2, ',', ' ') ?> Ar</strong></td>
                         <td>
                             <a href="<?= base_url('operateur/baremes/edit/' . $b['id']) ?>">Modifier</a> |
                             <a href="<?= base_url('operateur/baremes/delete/' . $b['id']) ?>" onclick="return confirm('Supprimer ce barème ?')">Supprimer</a>
@@ -112,11 +112,10 @@
                 <?php endforeach; ?>
             <?php else: ?>
                 <tr>
-                    <td colspan="5" style="text-align: center;">Aucun barème trouvé.</td>
+                    <td colspan="5" class="text-center">Aucun barème trouvé.</td>
                 </tr>
             <?php endif; ?>
         </tbody>
     </table>
 </body>
-
 </html>
