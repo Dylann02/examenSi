@@ -40,6 +40,8 @@ $routes->group('client', function ($routes) {
     $routes->get('logout', 'ClientController::logout');
     $routes->get('dashboard', 'ClientController::dashboard');
     $routes->post('action', 'ClientController::executerAction');
+    $routes->get('epargne/id_client/(:num)','EpargneController::indexEpargne/$1');
+    $routes->post('traitementEpargne', 'EpargneController::traitementEpargne');
 });
 
 // Redirection par défaut vers le login client

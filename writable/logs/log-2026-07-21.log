@@ -62,3 +62,1420 @@ DEBUG - 2026-07-21 05:33:21 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-07-21 05:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-21 05:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-07-21 05:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-07-21 07:35:50 --> REDIRECTED ROUTE at http://localhost:8080/client/login
+DEBUG - 2026-07-21 07:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 07:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:06:40 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:06:41 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:06:41 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:06:41 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:06:41 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:06:42 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:06:51 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:14 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:15 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:15 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:15 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:15 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:15 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:16 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:16 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:16 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:08:16 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:08:25 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:09:05 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:12 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:12 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:12 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:12 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:13 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:13 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:10:13 --> ErrorException: Undefined variable $id_client
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_client', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:26 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:26 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:26 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:26 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:27 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:27 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:27 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:27 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:27 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:28 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:12:28 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 12.
+ 1 APPPATH/Views/client/epargne.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 12)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:13:38 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:39 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:39 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:39 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:40 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:40 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:40 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:40 --> Error: Call to undefined function var_dumpt()
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 SYSTEMPATH/View/View.php(240): include()
+ 2 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 3 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 4 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:47 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:47 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:13:48 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:17:18 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne')
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-21 08:21:57 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:21:57 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:21:58 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:21:58 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:04 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:06 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:06 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:10 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:10 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:10 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:10 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:10 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:11 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:11 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:12 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:12 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:12 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:12 --> ErrorException: Undefined variable $compte
+[Method: GET, Route: client/epargne/id_client/1]
+in APPPATH/Views/client/epargne.php on line 1.
+ 1 APPPATH/Views/client/epargne.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compte', '/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php', 1)
+ 2 SYSTEMPATH/View/View.php(240): include('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/app/Views/client/epargne.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():237}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('client/epargne', [], true)
+ 5 APPPATH/Controllers/EpargneController.php(22): view('client/epargne', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->indexEpargne('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+DEBUG - 2026-07-21 08:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-21 08:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-21 08:22:21 --> no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/EpargneController.php(41): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:21 --> CodeIgniter\Database\Exceptions\DatabaseException: no such table: main.clients
+[Method: POST, Route: client/traitementEpargne]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 2 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/EpargneController.php(41): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 4 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH/Controllers/EpargneController.php(41): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:22:21 --> [Caused by] SQLite3Exception: no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/EpargneController.php(41): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+ERROR - 2026-07-21 08:50:34 --> no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/EpargneController.php(40): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:50:34 --> CodeIgniter\Database\Exceptions\DatabaseException: no such table: main.clients
+[Method: POST, Route: client/traitementEpargne]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 2 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/EpargneController.php(40): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:50:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 4 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH/Controllers/EpargneController.php(40): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
+CRITICAL - 2026-07-21 08:50:34 --> [Caused by] SQLite3Exception: no such table: main.clients
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (\'30\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `epargne` (`pourcentage_epargne`) VALUES (:pourcentage_epargne:)', [...], false)
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH/BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH/Controllers/EpargneController.php(40): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\EpargneController->traitementEpargne()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EpargneController))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/dylan/Documents/App/S4/SI/20-07-26/examenSi/public/index.php')
